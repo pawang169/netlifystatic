@@ -3192,7 +3192,7 @@ input, select, textarea {
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
+			padding : 2em 2em 2em 2em ;
 			max-width: 100%;
 			width: 75em;
 		}
