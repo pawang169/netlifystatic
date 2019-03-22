@@ -2300,7 +2300,7 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
 		display: block;
-		font-size: 1.1em;
+		font-size: 0.8em;
 	}
 
 	input[type="text"],
