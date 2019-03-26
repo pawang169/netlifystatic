@@ -22,6 +22,79 @@
 
          gtag('config', 'UA-136082898-1');
       </script>
+      <script>
+         // When the user clicks on <div>, open the popup
+         function importanceOfMeditationTextFunc() {
+           var popup = document.getElementById("importanceOfMeditationTextId");
+           popup.classList.toggle("show");
+         }
+
+         function meditatingAsAFamilyTextFunc() {
+           var popup = document.getElementById("meditatingAsAFamilyTextId");
+           popup.classList.toggle("show");
+         }
+      </script>
+      <style>
+         .fontsizeSmall {
+         font-size: 0.8em !important;
+         }
+         body {
+         font-size: 1em;
+         }
+         #sidebar nav a {
+         font-size: 1.2em;
+         }
+         table td {
+         width: 25%;
+         }
+         /* Popup container */
+         .popup {
+         position: relative;
+         display: inline-block;
+         cursor: pointer;
+         }
+         /* The actual popup (appears on top) */
+         .popup .popuptext {
+         visibility: hidden;
+         width: 250px;
+         background-color: #555;
+         color: #fff;
+         text-align: center;
+         border-radius: 6px;
+         padding: 8px 0;
+         position: absolute;
+         z-index: 1;
+         bottom: 125%;
+         left: 0%;
+         margin-left: -80px;
+         }
+         /* Popup arrow */
+         .popup .popuptext::after {
+         content: "";
+         position: absolute;
+         top: 100%;
+         left: 50%;
+         margin-left: -5px;
+         border-width: 5px;
+         border-style: solid;
+         border-color: #555 transparent transparent transparent;
+         }
+         /* Toggle this class when clicking on the popup container (hide and show the popup) */
+         .popup .show {
+         visibility: visible;
+         -webkit-animation: fadeIn 1s;
+         animation: fadeIn 1s
+         }
+         /* Add animation (fade in the popup) */
+         @-webkit-keyframes fadeIn {
+         from {opacity: 0;}
+         to {opacity: 1;}
+         }
+         @keyframes fadeIn {
+         from {opacity: 0;}
+         to {opacity:1 ;}
+         }
+      </style>
    </head>
    <body class="is-preload">
       <!-- Sidebar -->
@@ -29,27 +102,24 @@
          <div class="inner">
             <nav>
                <ul>
-                  <li><a href="#three">Sign Up</a></li>
+                  <li><a href="#three">SignUp</a></li>
                   <li><a href="#one">About</a></li>
                   <li><a href="#two">Agenda</a></li>
-               </ul>
-               <ul class="address">
                   <li>
-                     <h4>Address</h4>
+                     <a href="#address">Address</a>
+                     <a target="_blank" href="https://goo.gl/maps/duUSHoRVUSu" class="fontsizeSmall">Crossroads Community Center<br/>16000 NE 10th ST, Bellevue, WA 98008</a>
                   </li>
-                  <li><a target="_blank" href="https://goo.gl/maps/duUSHoRVUSu">Crossroads Community Center<br/>16000 NE 10th ST, Bellevue, WA 98008</a></li>
-               </ul>
-               <ul class="contact">
                   <li>
-                     <h4>Contact</h4>
+                     <a href="#address">Contact</a>
+                     <a target="_blank" href="mailto:ajili.hodari@sos.org?Subject=Meditate%20Like%20A%20Super%20Hero!" class="fontsizeSmall">ajili.hodari@sos.org</a>
+                     <a href="#" class="fontsizeSmall">+1 (206) 459-4680</a>
                   </li>
-                  <li><a target="_blank" href="mailto:ajili.hodari@sos.org?Subject=Meditate%20Like%20A%20Super%20Hero!">ajili.hodari@sos.org</a><a href="#">+1 (206) 459-4680</a></li>
                </ul>
             </nav>
          </div>
          <!-- <div class="inner">
             <div><img src="https://mlashero.netlify.com/images/br1.jpg" height="400px" width="375px" /></div>
-         </div> -->
+            </div> -->
       </section>
       <!-- Wrapper -->
       <div id="wrapper">
@@ -176,142 +246,159 @@
                <h2>Agenda</h2>
                <div class="features">
                   <table border="1">
-                     <tbody>
-                        <tr>
-                           <td>
-                              <p><strong>Slot Time</strong></p>
-                           </td>
-                           <td>
-                              <p><strong>Mirror Room</strong></p>
-                           </td>
-                           <td>
-                              <p><strong>Theatre Room</strong></p>
-                           </td>
-                           <td>
-                              <p><strong>Community Room</strong></p>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>10:00 - 10:30 am</span></p>
-                           </td>
-                           <td colspan="3">
-                              <center> <span><b>Registration</b></span> <br/>
-                                 Badge creation , Agenda Brouchers Handover , Meal Tickets , Meditation Slot registration
-                              </center>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>10:30 - 11:00 am</span></p>
-                           </td>
-                           <td colspan="3">
-                              <center>
-                                 <span><b>Introduction to Program</b></span> <br />
-                                 Welcome Talk , Introduction to Agenda, Introduction to Speakers
-                              </center>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>11:00 - 11:30 am</span></p>
-                           </td>
-                           <td>
-                              <span><b>Art & Craft</b></span></p>
-                           </td>
-                           <td>
-                              <center><span><b>Play on Ethical Virtues </b></span><br />
-                                 Live skit + Video presentation
-                              </center>
-                           </td>
-                           <td>
-                              <center><span><b>Meditation -101</b></span><br />
-                                 Basic introduction & <br>Practical experience on Meditation
-                              </center>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>11:30 - 12:00 pm</span></p>
-                           </td>
-                           <td>
-                              <span><b>Board Games</b></span></p>
-                           </td>
-                           <td>
-                              <center><span><b>Quiz on Ethical Virtues </b></span><br />
-                                 Exciting Rewards to the winners
-                              </center>
-                           </td>
-                           <td>
-                              <center><span><b>Meditation -102</b></span><br />
-                                 Advance lessions & <br>Practical experience on Meditation
-                              </center>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>12:00 - 12:30 pm</span></p>
-                           </td>
-                           <td colspan="3" rowspan="2">
-                              <center><span><b>Vegetarian Lunch </b></span><br />
-                                 Juice ,Popcorn , Fruits & <br>Veg Sandwich<br>Veg Salad<br>Veg Pizza
-                              </center>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>12:30 - 01:00 pm</span></p>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>01:00 - 01:30 pm</span></p>
-                           </td>
-                           <td>
-                              <span><b>Art & Craft</b></span></p>
-                           </td>
-                           <td>
-                              <center><span><b>Play on Ethical Virtues </b></span><br />
-                                 Live skit + Video presentation
-                              </center>
-                           </td>
-                           <td>
-                              <center><span><b>Meditation -101</b></span><br />
-                                 Basic introduction & <br>Practical experience on Meditation
-                              </center>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>01:30 - 02:00 pm</span></p>
-                           </td>
-                           <td>
-                              <span><b>Board Games</b></span></p>
-                           </td>
-                           <td>
-                              <center><span><b>Quiz on Ethical Virtues </b></span><br />
-                                 Exciting Rewards to the winners
-                              </center>
-                           </td>
-                           <td>
-                              <center><span><b>Meditation -102</b></span><br />
-                                 Advance lessions & <br>Practical experience on Meditation
-                              </center>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <p><span>02:00 - 03:00 pm</span></p>
-                           </td>
-                           <td colspan="3">
-                              <center><span><b>Closing</b></span><br />
-                                 Goodie bags & Reward Distribution
-                              </center>
-                           </td>
-                        </tr>
+                     <tr>
+                        <td align="center">
+                           <p><strong>Slot Time</strong></p>
+                        </td>
+                        <td align="center">
+                           <p><strong>Mirror Room</strong></p>
+                        </td>
+                        <td align="center">
+                           <p><strong>Theatre Room</strong></p>
+                        </td>
+                        <td align="center">
+                           <p><strong>Community Room</strong></p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>10:00 - 10:30 am</span></p>
+                        </td>
+                        <td colspan="3">
+                           <center> <span><b>Registration</b></span> <br/>
+                              Badge creation, Agenda Brouchers Handover, Meal Tickets, Meditation talk registration
+                           </center>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>10:30 - 11:00 am</span></p>
+                        </td>
+                        <td colspan="3">
+                           <center>
+                              <span><b>Introduction to Program</b></span> <br />
+                              Welcome Talk, Introduction to Agenda and Speakers
+                           </center>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>11:00 - 11:30 am</span></p>
+                        </td>
+                        <td rowspan="2">
+                           <center><span><b>Children Activities</b></span></center>
+                           Art & Craft, Board Games, Power of Meditation Booklet, and many more...
+                        </td>
+                        <td>
+                           <center><span><b>Play on Ethical Virtues </b></span><br />
+                              Live skit + Video presentation
+                           </center>
+                        </td>
+                        <td rowspan="2">
+                           <center><span><b>The Importance of Meditation for Children</b></span></center>
+                           The simple act of teaching children how to stop, focus, and just breathe could be one of the greatest gifts you give them.
+                           <div class="popup" onclick="importanceOfMeditationTextFunc()">Read More.
+                              <span class="popuptext" id="importanceOfMeditationTextId">Children of all ages really need opportunities where they can take time out each day "disconnect" to relax and focus. Children today also have reportedly high stress levels. Therefore to help them take a break, the child development experts encourages parents to share meditation with their children. The simple act of teaching children how to stop, focus, and just breathe could be one of the greatest gifts you give them. Learn how meditation offers this break and helps kids function more effectively and clearly.</span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>11:30 - 12:00 pm</span></p>
+                        </td>
+                        <!-- <td>
+                           <center><span><b>Children Activities</b></span></center>
+                           Art & Craft, Board Games, Power of Meditation Booklet, and many more...
+                                       </td> -->
+                        <td>
+                           <center><span><b>Quiz on Ethical Virtues </b></span><br />
+                              Exciting Rewards to the winners
+                           </center>
+                        </td>
+                        <!-- <td>
+                           <center><span><b>Meditation -102</b></span><br />
+                              Advance lessions & <br>Practical experience on Meditation
+                           </center>
+                           </td> -->
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>12:00 - 12:30 pm</span></p>
+                        </td>
+                        <td colspan="3" rowspan="2">
+                           <br/><br/>
+                           <center><span><b>Vegetarian Lunch </b></span><br />
+                              Juice, Popcorn, Fruits, Snaks, Vegetarian Sandwiches, Salad, and Pizza
+                           </center>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>12:30 - 01:00 pm</span></p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>01:00 - 01:30 pm</span></p>
+                        </td>
+                        <td rowspan="2">
+                           <center><span><b>Children Activities</b></span></center>
+                           Art & Craft, Board Games, Power of Meditation Booklet, and many more...
+                        </td>
+                        <td>
+                           <center><span><b>Play on Ethical Virtues </b></span><br />
+                              Live skit + Video presentation
+                           </center>
+                        </td>
+                        <td rowspan="2">
+                           <center><span><b>Meditating as a Family</b></span></center>
+                           With meditation, parents model self-awareness and inner peace, which is much needed in an increasingly distracting, chaotic and busy world.
+                           <div class="popup" onclick="meditatingAsAFamilyTextFunc()">Read more.
+                              <span class="popuptext" id="meditatingAsAFamilyTextId">In today’s world parenting is too often an exceptionally busy and isolating endeavor. All too often we are bombarded with screens and it’s tempting to tune a distracted or distressed child into an iPad rather than teach him or her about the benefits of taking a deep breath. Even small children are too often overscheduled and stressed. This is one of the many reasons why integrating meditation practices into family life is a good idea. With meditation, parents model self-awareness and inner peace, which is much needed in an increasingly distracting, chaotic and busy world. Whether one is trying to cope with difficult feelings or cultivating the quality of gratitude, meditating as a family, benefits all. </span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>01:30 - 02:00 pm</span></p>
+                        </td>
+                        <!-- <td>
+                           <center><span><b>Children Activities</b></span></center>
+                           Art & Craft, Board Games, Power of Meditation Booklet, and many more...
+                                       </td> -->
+                        <td>
+                           <center><span><b>Quiz on Ethical Virtues </b></span><br />
+                              Exciting Rewards to the winners
+                           </center>
+                        </td>
+                        <!-- <td>
+                           <center><span><b>Meditation -102</b></span><br />
+                              Advance lessions & <br>Practical experience on Meditation
+                           </center>
+                           </td> -->
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><span>02:00 - 03:00 pm</span></p>
+                        </td>
+                        <td colspan="3">
+                           <center><span><b>Closing</b></span><br />
+                              Goodie bags & Reward Distribution
+                           </center>
+                        </td>
+                     </tr>
                      </tbody>
                   </table>
                </div>
+            </div>
+         </section>
+         <section id="address" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+               <h1>Address</h1>
+               <a target="_blank" href="https://goo.gl/maps/duUSHoRVUSu">Crossroads Community Center<br/>16000 NE 10th ST, Bellevue, WA 98008</a>
+               <h1>Contact</h1>
+               Email: <a target="_blank" href="mailto:ajili.hodari@sos.org?Subject=Meditate%20Like%20A%20Super%20Hero!">ajili.hodari@sos.org</a><br/>
+               Phone: <a href="#">+1 (206) 459-4680</a>
             </div>
          </section>
       </div>
